@@ -7,9 +7,9 @@
 3. Properties: named data values
 4. Labels: Nodes can be grouped together by applying a Label to each member
 
-## Cypher 
+# Cypher 
 
-================================================================================
+***
 
 ## 创建结点 CREATE
 
@@ -234,7 +234,7 @@ REMOVE <property-name-list>
 .... 
 <node-name>.<propertyn-name> 
 
-=================================
+======================================
 
 REMOVE <label-name-list> 
 
