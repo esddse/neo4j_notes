@@ -122,8 +122,8 @@ settings:
 
 * find(*args, **kwargs)
   
-  Parameters: 
-  
+  **Parameters:**  
+
   * label
   * property_key
   * property_value
@@ -131,7 +131,7 @@ settings:
 
 * find_one(*args, **kwargs)
   
-  Parameters: 
+  **Parameters:** 
 
   * label
   * property_key
@@ -141,7 +141,7 @@ settings:
   
   Match and return all relations with specific criteria
 
-  Parameters: 
+  **Parameters:** 
   
   * start_node
   * rel_type
