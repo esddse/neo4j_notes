@@ -122,26 +122,32 @@ settings:
 
 * find(*args, **kwargs)
   
-  Parameters: * label
-              * property_key
-              * property_value
-              * limit
+  Parameters: 
+  
+  * label
+  * property_key
+  * property_value
+  * limit
 
 * find_one(*args, **kwargs)
   
-  Parameters: * label
-              * property_key
-              * property_value
+  Parameters: 
+
+  * label
+  * property_key
+  * property_value
 
 * match(start_node=None, rel_type=None, end_node=None, bidirectional=False, limit=None)
   
   Match and return all relations with specific criteria
 
-  Parameters: * start_node
-              * rel_type
-              * end_node
-              * bidirectional
-              * limit
+  Parameters: 
+  
+  * start_node
+  * rel_type
+  * end_node
+  * bidirectional
+  * limit
 
   例子
   ```
