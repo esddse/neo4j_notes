@@ -129,6 +129,12 @@ settings:
   * property_value
   * limit
 
+  例子
+  ```
+  for node in graph_pku.find("SCHOOL", property_key="chinese_short" , property_value="信科"):
+    print (node['english_name'])
+  ```
+
 * find_one(*args, **kwargs)
   
   **Parameters:** 
