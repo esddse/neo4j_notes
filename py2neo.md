@@ -27,7 +27,6 @@ class Node(*labels, **properties)
 a = Node("Person", name="Alice")
 ```
 
-
 ## 创建关系
 
 ```
@@ -37,6 +36,21 @@ class Relationship(start_node, type, end_node, **properties)
 例子
 ```
 ab = Relationship(a, "KNOWS", b)
+```
+
+## 结点的属性
+
+结点的属性可以通过下面几种方式访问:
+
+```
+# 直接访问
+Node[key]
+
+# 比较
+Node[key] == XXXX
+
+# 赋值
+Node[key] = XXX
 ```
 
 ## 子图

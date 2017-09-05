@@ -275,3 +275,40 @@ MATCH (emp:Employee)
 RETURN emp.empid,emp.name,emp.salary,emp.deptno
 ORDER BY emp.name
 ```
+
+## MERGE
+
+在图中搜索给定模式:
+* 若存在则返回结果
+* 若不存在，则创建新的结点/关系，并返回结果
+
+```
+MERGE (<node-name>:<label-name>
+{
+   <Property1-name>:<Property1-Value>
+   .....
+   <Propertyn-name>:<Propertyn-Value>
+})
+```
+
+例子:
+
+```
+MERGE (gp2:GoogleProfile2{ Id: 201402,Name:"Nokia"})
+```
+
+## ID
+
+在neo4j中，每一个结点都有一个唯一的id
+
+可以通过``id(a)``得到，其中a为结点名
+
+例子
+
+```
+# 查询结点id:
+MATCH (a:SCHOOL) WHERE a.简称='信科' RETURN id(a)
+
+# 使用结点id进行查询
+MATCH (a:SCHOOL) WHERE id(a)=28803 RETURN a
+```
