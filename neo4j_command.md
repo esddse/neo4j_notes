@@ -124,8 +124,8 @@ CREATE (video1:YoutubeVideo1{title:"Action Movie1",updated_by:"Abc",uploaded_dat
 #### 检索
 
 ```
-MATCH (<node1-label-name>)-[<relationship-label-name>:<relationship-name>]->(<node2-label-name>)
-RETURN <relationship-label-name>
+MATCH (<node1-label-name>)-[<relationship-name>:<relationship-label-name>]->(<node2-label-name>)
+RETURN <relationship-name>
 ```
 
 ## 创建标签
@@ -261,6 +261,14 @@ REMOVE m:Picture
 **SET和REMOVE作用相反，向现有结点或者关系添加或者更新属性值**
 
 语法和REMOVE相同
+
+例子
+```
+match (n:Person)
+where n.name="n2"
+set n.age=11
+return n
+```
 
 ## 排序
 
